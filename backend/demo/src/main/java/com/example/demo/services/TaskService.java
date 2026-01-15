@@ -61,6 +61,7 @@ public class TaskService {
 		Document result = results.getUniqueMappedResult();
 		List<Task> tasks = (List<Task>) result.get("tasks");
 		List<Document> activeList = (List<Document>) result.get("activeCount");
+		@SuppressWarnings("unchecked")
 		Integer activeCount = activeList.isEmpty() ? 0 : activeList.get(0).getInteger("count");
 		List<Document> completeList = (List<Document>) result.get("completeCount");
 		TaskResponseDTO taskResponseDTO = new TaskResponseDTO();
