@@ -1,0 +1,140 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+@config "../tailwind.config.js";
+
+@layer base {
+  :root {
+    --background: 224 71% 4%;
+    --background-secondary: 224 64% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 224 64% 8%;
+    --card-foreground: 210 20% 98%;
+    --card-shadow: 224 71% 2%;
+
+    --popover: 224 67% 9%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 250 95% 63%;
+    --primary-light: 258 90% 66%;
+    --primary-dark: 265 80% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 98%;
+
+    --info: 199 89% 48%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 28% 17%;
+    --input: 215 28% 15%;
+    --ring: 250 95% 63%;
+
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(258 90% 66%) 0%,
+      hsl(265 80% 48%) 100%
+    );
+    --gradient-background: linear-gradient(
+      135deg,
+      hsl(224 71% 4%) 0%,
+      hsl(224 64% 7%) 100%
+    );
+    --gradient-card: linear-gradient(
+      135deg,
+      hsl(224 64% 8%) 0%,
+      hsl(224 67% 9%) 100%
+    );
+
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.45),
+      0 2px 4px -2px hsl(0 0% 0% / 0.45);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.5),
+      0 4px 6px -4px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 30px hsl(250 95% 63% / 0.35),
+      0 0 60px hsl(250 95% 63% / 0.15);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 224 71% 3%;
+
+    --sidebar-foreground: 210 20% 98%;
+
+    --sidebar-primary: 250 95% 63%;
+
+    --sidebar-primary-foreground: 0 0% 100%;
+
+    --sidebar-accent: 215 28% 15%;
+
+    --sidebar-accent-foreground: 210 20% 98%;
+
+    --sidebar-border: 215 28% 14%;
+
+    --sidebar-ring: 250 95% 63%;
+  }
+
+  .dark {
+    --background: 224 71% 2%;
+    --foreground: 210 40% 98%;
+
+    --card: 224 64% 6%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 224 67% 7%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 250 95% 63%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 28% 15%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 217 33% 15%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 28% 15%;
+    --input: 215 28% 13%;
+    --ring: 250 95% 63%;
+    --sidebar-background: 224 71% 1%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 250 95% 63%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 28% 13%;
+    --sidebar-accent-foreground: 210 20% 98%;
+    --sidebar-border: 215 28% 12%;
+    --sidebar-ring: 250 95% 63%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
