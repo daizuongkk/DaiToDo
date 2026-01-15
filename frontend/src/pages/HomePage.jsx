@@ -20,7 +20,7 @@ const HomePage = () => {
 
   const [page, setPage] = useState(1);
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/immutability
+    // eslInteger-disable-next-line react-hooks/immutability
     fetchTasks();
   }, [dateFilter]);
 

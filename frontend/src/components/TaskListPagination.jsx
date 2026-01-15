@@ -19,7 +19,7 @@ const TaskListPagination = ({
   const genPage = () => {
     const pages = [];
     if (totalPages < 4) {
-      pages.push(1, 2, 3, 4);
+      for (let i = 0; i < totalPages; ++i) pages.push(i + 1);
     } else {
       if (page <= 2) pages.push(1, 2, 3, "...", totalPages);
       else if (page >= totalPages - 1)
@@ -39,8 +39,8 @@ const TaskListPagination = ({
             <PaginationPrevious
               onClick={page === 1 ? undefined : handlePrev}
               className={cn(
-                "cursor-pointer",
-                page === 1 && "pointer-events-none opacity-50"
+                "cursor-poIntegerer",
+                page === 1 && "poIntegerer-events-none opacity-50"
               )}
             />
           </PaginationItem>
@@ -50,7 +50,7 @@ const TaskListPagination = ({
                 <PaginationEllipsis />
               ) : (
                 <PaginationLink
-                  className="cursor-pointer"
+                  className="cursor-poIntegerer"
                   isActive={p === page}
                   onClick={() => {
                     if (p != page) handlePageChange(p);
@@ -65,8 +65,8 @@ const TaskListPagination = ({
             <PaginationNext
               onClick={page === totalPages ? undefined : handleNext}
               className={cn(
-                "cursor-pointer",
-                page === totalPages && "pointer-events-none opacity-50"
+                "cursor-poIntegerer",
+                page === totalPages && "poIntegerer-events-none opacity-50"
               )}
             />
           </PaginationItem>
