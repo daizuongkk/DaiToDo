@@ -14,8 +14,8 @@ const AddTask = ({ handleNewTaskAdded }) => {
         await api.post("/tasks", {
           name: newTask,
         });
-        toast.success(`The task ${newTask} has been added`);
         handleNewTaskAdded();
+        toast.success(`The task ${newTask} has been added`);
       } catch (error) {
         console.log(error);
         toast.error("An error occurred while adding a task.");

@@ -1,55 +1,8 @@
-# Logs
-frontend/logs
-frontend/*.log
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
-frontend/pnpm-debug.log*
-frontend/lerna-debug.log*
 
-frontend/node_modules
-frontend/dist
-frontend/dist-ssr
-frontend/*.local
-
-# Editor directories and files
-frontend/.vscode/*
-frontend/!.vscode/extensions.json
-frontend/.idea
-frontend/.DS_Store
-frontend/*.suo
-frontend/*.ntvs*
-frontend/*.njsproj
-frontend/*.sln
-frontend/*.sw?
-
-
-#backend ignore
-backend/target/
-backend/HELP.md
-backend/.mvn/wrapper/maven-wrapper.jar
-backend/!**/src/main/**/target/
-backend/!**/src/test/**/target/
-
-### STS ###
-backend/.classpath
-backend/.factorypath
-backend/.apt_generated
-backend/.project
-backend/.settings
-backend/.springBeans
-backend/.sts4-cache
-
-### IntegerelliJ IDEA ###backend/
-backend/.idea
-backend/*.iws
-backend/*.iml
-backend/*.ipr
 
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
-/dist/
 /nbdist/
 /.nb-gradle/
 build/

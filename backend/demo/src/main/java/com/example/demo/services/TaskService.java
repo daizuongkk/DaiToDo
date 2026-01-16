@@ -72,7 +72,6 @@ public class TaskService {
 		return taskResponseDTO;
 	}
 
-	@SuppressWarnings("null")
 	public Task createTask(Task task) {
 
 		return taskRepository.save(task);

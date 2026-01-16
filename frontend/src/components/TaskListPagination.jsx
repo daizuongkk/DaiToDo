@@ -30,7 +30,6 @@ const TaskListPagination = ({
   };
 
   const pagesToShow = genPage();
-  console.log(pagesToShow);
   return (
     <div className="flex justify-center mt-3">
       <Pagination>

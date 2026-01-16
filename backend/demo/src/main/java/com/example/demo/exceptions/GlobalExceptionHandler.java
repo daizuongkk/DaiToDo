@@ -20,4 +20,12 @@ public class GlobalExceptionHandler {
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
 	}
 
+	@ExceptionHandler(RuntimeException.class)
+	public ResponseEntity<ErrorResponseDTO> allErrro(RuntimeException e) {
+		ErrorResponseDTO error = new ErrorResponseDTO();
+		error.setStatus(500);
+		error.setErrorCode("SOME_ERROR");
+		error.setMessage(e.getMessage());
+		return ResponseEntity.status(500).body(error);
+	}
 }

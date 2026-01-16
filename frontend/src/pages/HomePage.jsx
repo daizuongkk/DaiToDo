@@ -41,7 +41,6 @@ const HomePage = () => {
       setActiveTaskCount(res.data.activeCount);
       setCompleteTaskCount(res.data.completeCount);
       setTaskBuffer(res.data.tasks);
-      console.log(res);
     } catch (error) {
       console.error("An error occurred when querying task ", error);
       toast.error("An error occurred when retrieving task data");
