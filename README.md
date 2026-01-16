@@ -1,5 +1,5 @@
-#DaiToDo  
-code linh tinh  
+###DaiToDo  
+code linh tinh, chạy được là được!  
 CURD API with Spring Boot  
 MongoDB  
 ReactJS + TailwindCSS 4 for  FrontEnd  
