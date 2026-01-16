@@ -1,4 +1,5 @@
 D:\code\Project\Web\DaiToDo\backend\demo\src\main\java\com\example\demo\config\MongoConfig.java
+D:\code\Project\Web\DaiToDo\backend\demo\src\main\java\com\example\demo\controllers\FrontEndController.java
 D:\code\Project\Web\DaiToDo\backend\demo\src\main\java\com\example\demo\controllers\TaskController.java
 D:\code\Project\Web\DaiToDo\backend\demo\src\main\java\com\example\demo\DemoApplication.java
 D:\code\Project\Web\DaiToDo\backend\demo\src\main\java\com\example\demo\DTOs\request\TaskRequestDTO.java

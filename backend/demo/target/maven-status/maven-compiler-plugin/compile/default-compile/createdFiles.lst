@@ -1,11 +1,12 @@
 com\example\demo\DemoApplication.class
-com\example\demo\models\TaskStatus.class
 com\example\demo\controllers\TaskController.class
-com\example\demo\DTOs\request\TaskRequestDTO.class
-com\example\demo\services\TaskService.class
+com\example\demo\controllers\FrontEndController.class
 com\example\demo\config\MongoConfig.class
-com\example\demo\exceptions\GlobalExceptionHandler.class
 com\example\demo\models\Task.class
 com\example\demo\DTOs\response\ErrorResponseDTO.class
 com\example\demo\DTOs\response\TaskResponseDTO.class
+com\example\demo\models\TaskStatus.class
+com\example\demo\DTOs\request\TaskRequestDTO.class
+com\example\demo\services\TaskService.class
+com\example\demo\exceptions\GlobalExceptionHandler.class
 com\example\demo\repositories\TaskRepository.class
