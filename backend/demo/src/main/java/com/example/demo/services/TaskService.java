@@ -73,8 +73,13 @@ public class TaskService {
 	}
 
 	public Task createTask(Task task) {
-
-		return taskRepository.save(task);
+		try {
+			return taskRepository.save(task);
+		} catch (IllegalArgumentException e) {
+			throw new IllegalArgumentException("Invalid task data provided: " + e.getMessage(), e);
+		} catch (Exception e) {
+			throw new RuntimeException("An error occurred while creating the task: " + e.getMessage(), e);
+		}
 	}
 
 	public Task updateTask(String id, Task taskDetails) {
