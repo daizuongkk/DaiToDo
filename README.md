@@ -1,6 +1,12 @@
-###DaiToDo  
+## DaiToDo  
+
 code linh tinh, chạy được là được!  
-CURD API with Spring Boot  
-MongoDB  
-ReactJS + TailwindCSS 4 for  FrontEnd  
-ok: https://daitodo.onrender.com/
+ 
+## Tech  
+- Spring Boot (CRUD API)  
+- MongoDB  
+- ReactJS  
+- TailwindCSS v4  
+
+## Demo
+👉 https://daitodo.onrender.com/
