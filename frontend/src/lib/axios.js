@@ -1,5 +1,4 @@
 import axios from "axios";
-
-const api = axios.create({ baseURL: "https://daitodo.onrender.com/api" });
-
+const BASE_URL = import.meta.env.API_KEY;
+const api = axios.create({ baseURL: BASE_URL });
 export default api;
